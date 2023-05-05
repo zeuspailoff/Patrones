@@ -21,7 +21,11 @@ public class ShopCart {
 
     // pagar utilizando una estrategia de pago
     public void pay(PaymentStrategy paymentMethod){
-    	Double result = products.stream().map(x -> x.getPrice()).reduce(Double::sum).orElse(0d);
+    	Double result = products.stream()
+                .map(x -> x.getPrice())
+                .reduce(Double::sum)
+                .orElse(0d);
+
         double amount = 0;
         for (Product product : products) {
             amount += product.getPrice();
