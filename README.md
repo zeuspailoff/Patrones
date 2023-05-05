@@ -113,7 +113,7 @@ Principios SOLID: principio SRP Una sola responsabilidad al aislar la forma de c
 Desventajas:
 
 Requiere crear una nueva clase Builder lo cual puede añadir complejidad a la clase original. 
-### 6.Observer
+### 6. Observer
    Cuando tenemos una asociación de tipo one to many entre clases y queremos que cuando se actualice el objeto del lado one se notifique automáticamente a los objetos del lado many.
 
 Por ejemplo:
@@ -127,7 +127,7 @@ Establecer asociaciones entre objetos en tiempo de ejecución (runtime)
 Cons:
 
 Puede ser que no se siga un orden a la hora de notificar a los suscriptores y se haga de manera aleatoria 
-### 7.Decorator
+### 7. Decorator
    Agregar nueva funcionalidad a objetos existentes. Decorar objetos con nuevas funcionalidades.
 
 Ejemplo: muñeca rusa. Un objeto se puede decorar con funcionalidad y a su vez el resultado se le puede seguir aplicando otros decoradores.
